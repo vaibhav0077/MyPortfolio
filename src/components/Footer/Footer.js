@@ -1,9 +1,11 @@
 import React from "react";
 import {
+  AiFillCode,
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
   AiFillTwitterCircle,
+  AiOutlineInfo,
 } from "react-icons/ai";
 import { Link } from "../../styles/GlobalComponents";
 import { SocialIcons } from "../Header/HeaderStyles";
@@ -50,11 +52,11 @@ const Footer = () => {
           >
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="#" target="_blank">
-            <AiFillInstagram size="3rem" />
+          <SocialIcons href="https://leetcode.com/vaibhav0077/">
+            <AiFillCode size="3rem" />
           </SocialIcons>
-          <SocialIcons href="#" target="_blank">
-            <AiFillTwitterCircle size="3rem" />
+          <SocialIcons href="https://linktr.ee/vaibhav0077">
+            <AiOutlineInfo size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
