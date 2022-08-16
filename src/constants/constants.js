@@ -16,7 +16,7 @@ export const projects = [
     image: "/images/banner.jpg",
     tags: ["HTML", "CSS", "Styled-Components", "React"],
     source: "https://github.com/vaibhav0077/MyPortfolio",
-    visit: "#",
+    visit: "https://vaibhavpatel.ml/",
     id: 1,
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
     image: "/images/Hot-food.png",
     tags: ["Django", "BootStrap", "HTML-CSS", "JavaScript"],
     source: "https://github.com/vaibhav0077/Django-Hot-Food",
-    visit: "",
+    visit: "#",
     id: 4,
   },
 ];
