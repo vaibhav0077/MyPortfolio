@@ -7,16 +7,17 @@ export default async (req, res) => {
   const clientIp =
     (req.headers["x-forwarded-for"] || "").split(",").pop().trim() ||
     req.socket.remoteAddress;
-  // console.log("clientIp", clientIp);
-  // console.log(
-  //   typeof file.ip_requested,
-  //   typeof clientIp,
-  //   file.ip_requested.includes(clientIp)
-  // );
+  console.log("clientIp", clientIp);
+  console.log(
+    typeof file.ip_requested,
+    typeof clientIp,
+    file.ip_requested.includes(clientIp)
+  );
   if (!file.ip_requested.includes(clientIp)) {
-    file.totalViews += 1;
+    file.totalUniqueViews += 1;
     file.ip_requested += `,[${clientIp}]`;
   }
+  file.totalViews += 1;
   await fs.writeFile(
     path.join(process.cwd(), "public", "files", "numberofviews.json"),
     JSON.stringify(file),

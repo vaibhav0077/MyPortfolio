@@ -13,7 +13,8 @@ const Home = () => {
     .then((result) => result.json())
     .then((data) => {})
     .catch((err) => console.log("error", err));
-  console.log("Nunmber Of Views", Website_data.totalViews);
+  console.log("Nunmber Of unique Views", Website_data.totalUniqueViews);
+  console.log("Nunmber Of total Views", Website_data.totalViews);
   console.log("Nunmber Of Ips ", Website_data.ip_requested);
   return (
     <Layout>
