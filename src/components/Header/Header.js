@@ -7,6 +7,7 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiOutlineInfo,
+  AiOutlineMail,
 } from "react-icons/ai";
 import {
   Container,
@@ -63,6 +64,9 @@ const Header = () => (
       </SocialIcons>
       <SocialIcons href="https://linktr.ee/vaibhav0077">
         <AiOutlineInfo size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="mailto:vaibhavpatel01203@gmail.com">
+        <AiOutlineMail size="3rem" />
       </SocialIcons>
     </Div3>
   </Container>

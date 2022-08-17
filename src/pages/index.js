@@ -6,8 +6,15 @@ import Technologies from "../components/Technologies/Technologies";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
+import Website_data from "../../public/files/numberofviews";
 
 const Home = () => {
+  fetch("api/hello")
+    .then((result) => result.json())
+    .then((data) => {})
+    .catch((err) => console.log("error", err));
+  console.log("Nunmber Of Views", Website_data.totalViews);
+  console.log("Nunmber Of Ips ", Website_data.ip_requested);
   return (
     <Layout>
       <Section grid>

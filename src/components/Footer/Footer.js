@@ -6,6 +6,7 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiOutlineInfo,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { Link } from "../../styles/GlobalComponents";
 import { SocialIcons } from "../Header/HeaderStyles";
@@ -31,7 +32,9 @@ const Footer = () => {
         </LinkColumn> */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:hey@vaibhav.com">hey@vaibhav.com</LinkItem>
+          <LinkItem href="mailto:vaibhavpatel01203@gmail.com">
+            hey@vaibhav.com
+          </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
@@ -57,6 +60,9 @@ const Footer = () => {
           </SocialIcons>
           <SocialIcons href="https://linktr.ee/vaibhav0077">
             <AiOutlineInfo size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="mailto:vaibhavpatel01203@gmail.com">
+            <AiOutlineMail size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
