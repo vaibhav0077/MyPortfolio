@@ -1,12 +1,12 @@
 import { DiDjango, DiTerminal, DiPython, DiReact } from "react-icons/di";
 import {
-  SiJava,
   SiFirebase,
   SiGit,
   SiDjango,
   SiLeetcode,
   SiNextDotJs,
   SiJavascript,
+  SiEthereum,
 } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 
@@ -40,7 +40,6 @@ export const Skills = [
     title: "NextJs",
     Description: () => (
       <>
-        {" "}
         I have also work on Project as Full Stack Developer Using NextJs &
         Django .
       </>
@@ -68,5 +67,11 @@ export const Skills = [
     Description: () => (
       <>Git is a tool that I use every day. I use GitHub for pushing my code.</>
     ),
+  },
+  {
+    slug: "Ethereum",
+    Component: SiEthereum,
+    title: "Ethereum",
+    Description: () => <>Also Anthusistic About WEB3, solidity.</>,
   },
 ];
