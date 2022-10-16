@@ -22,7 +22,9 @@ const Hero = (props) => (
         <Button
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = "/files/resume.pdf";
+            // if()
+            // window.location.href = "/files/resume.pdf";
+            alert("Sorry , File Is Courrpted")
           }}
         >
           My Resume
