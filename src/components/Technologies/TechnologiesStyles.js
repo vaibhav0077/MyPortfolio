@@ -87,6 +87,27 @@ export const ListTitle = styled.h4`
 }
 `
 
+export const ListSubTitle = styled.h6`
+  font-weight: 3000;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #A9A9A9;
+  margin-bottom: 12px;
+
+@media ${props => props.theme.breakpoints.md}{
+  font-size: 12px;
+  line-height: 10px;
+}
+
+@media ${props => props.theme.breakpoints.sm}{
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+`
+
 export const ListParagraph = styled.div`
   font-size: 18px;
   line-height: 30px;

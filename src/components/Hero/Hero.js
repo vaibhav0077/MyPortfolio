@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 
 import {
   Section,
   SectionText,
   SectionTitle,
   Link,
-} from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+} from "../../styles/GlobalComponents"
+import Button from "../../styles/GlobalComponents/Button"
+import { LeftSection } from "./HeroStyles"
 
 const Hero = (props) => (
   <>
@@ -17,14 +17,27 @@ const Hero = (props) => (
           Hey there,
         </SectionTitle>
         <SectionText>
-          Hey there, This is Vaibhav Patel. I am an Full Stack developer who also works on ReactJs, NextJs, & Django.
+          Hello, I'm Vaibhav Patel, a Full Stack developer proficient in
+          ReactJs, NextJs, and Django.
         </SectionText>
         <Button
           onClick={(e) => {
-            e.preventDefault();
-            // if()
-            // window.location.href = "/files/resume.pdf";
-            alert("Sorry , File Is Courrpted")
+            const resumeUrl = "/files/vaibhav_patel.pdf"
+            fetch(resumeUrl)
+              .then((response) => response.blob())
+              .then((blob) => {
+                const url = window.URL.createObjectURL(new Blob([blob]))
+                const a = document.createElement("a")
+                a.href = url
+                a.download = "vaibhav_patel.pdf"
+                document.body.appendChild(a)
+                a.click()
+                document.body.removeChild(a)
+              })
+              .catch(() => {
+                alert("Sorry, the file is corrupted or not available.")
+              })
+            e.preventDefault()
           }}
         >
           My Resume
@@ -32,6 +45,6 @@ const Hero = (props) => (
       </LeftSection>
     </Section>
   </>
-);
+)
 
-export default Hero;
+export default Hero

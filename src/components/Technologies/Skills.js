@@ -7,10 +7,23 @@ import {
   SiNextDotJs,
   SiJavascript,
   SiEthereum,
+  SiAmazonaws,
+  SiPython,
 } from "react-icons/si";
-import { RiFlutterFill } from "react-icons/ri";
 
 export const Skills = [
+  {
+    slug: "aws",
+    Component: SiAmazonaws,
+    title: "AWS",
+    Description: () => <>Host Website and also use serverless and other services.</>,
+  },
+  {
+    slug: "python",
+    Component: SiPython,
+    title: "Python",
+    Description: () => <>Use Python for API Development and for problem Solving.</>,
+  },
   {
     slug: "dsa",
     Component: SiLeetcode,
@@ -63,7 +76,7 @@ export const Skills = [
   {
     slug: "git",
     Component: SiGit,
-    title: "Git",
+    title: "Git & GitHub",
     Description: () => (
       <>Git is a tool that I use every day. I use GitHub for pushing my code.</>
     ),

@@ -54,11 +54,15 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2018, text: "Started my journey as a new developer." },
-  { year: 2019, text: "Developing COncepts of Coding." },
+  { year: 2019, text: "Developing Concepts of Coding." },
   { year: 2020, text: "Learning Python form Basics." },
-  { year: 2021, text: "Learning Python: Django Framework" },
+  { year: 2021, text: "Learning Python: Django Framework & DRF" },
   {
     year: 2022,
-    text: "Practise & Mastering Django & Learning Javascript, ReactJs, NextJs.",
+    text: "Practise & Mastering DSA, My JourneyDjango & Learning Javascript, ReactJs, NextJs.",
+  },
+  {
+    year: 2023,
+    text: "Gain expertise in diverse AWS services, employ AWS Amplify for comprehensive website development, and leverage other AWS services to fulfill various tasks.",
   },
 ];
